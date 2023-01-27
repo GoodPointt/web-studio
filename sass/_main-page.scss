@@ -115,14 +115,11 @@ body {
 	border-radius: 50%;
 	background-color: var(--accent-color);
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: background-color;
-}
-
-.social-link:hover,
-.social-link:focus {
-	background-color: var(--btn-hover-color);
+	transition: background-color var(--o-animation);
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
 }
 
 /*================== CUSTOMERS ==================*/
@@ -139,13 +136,10 @@ body {
 
 	fill: #8e8f99;
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: fill, border-color;
-}
-
-.customers-link:hover,
-.customers-link:focus {
-	fill: var(--accent-color);
-	border-color: var(--accent-color);
+	transition: fill var(--o-animation), border-color var(--o-animation);
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+		border-color: var(--accent-color);
+	}
 }

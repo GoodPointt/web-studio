@@ -32,14 +32,12 @@
 .social-link.footer-social {
 	background-color: rgba(255, 255, 255, 0.1);
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: background-color;
-}
+	transition: background-color var(--o-animation);
 
-.social-link.footer-social:hover,
-.social-link.footer-social:focus {
-	background-color: var(--sechover-color);
+	&:hover,
+	&:focus {
+		background-color: var(--sechover-color);
+	}
 }
 
 .flex-form {
@@ -58,14 +56,12 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: border-color;
-}
+	transition: border-color var(--o-animation);
 
-.subscribe-input:focus {
-	border-color: var(--accent-color);
-	outline: none;
+	&:focus {
+		border-color: var(--accent-color);
+		outline: none;
+	}
 }
 
 .subscribe-btn {
@@ -77,9 +73,7 @@
 	color: #ffffff;
 	border-radius: 4px;
 
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: background-color;
+	transition: background-color var(--o-animation);
 
 	width: 165px;
 	height: 40px;
@@ -90,10 +84,11 @@
 	font-size: 16px;
 	line-height: 0.84;
 	letter-spacing: 0.04em;
-}
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-	background-color: var(--btn-hover-color);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
 }
 
 .subscribe-svg {
