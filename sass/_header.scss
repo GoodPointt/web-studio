@@ -1,3 +1,32 @@
+/*===================== LOGO ===========================*/
+.logo-link {
+	display: inline-flex;
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+.logo-name {
+	color: var(--title-text-color);
+}
+
+/*======================= HEADER =======================*/
+.page-header {
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+	background-color: var(--bg-color);
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+/*===================== NAVIGATION ======================*/
 .header-nav {
 	display: flex;
 	align-items: center;
