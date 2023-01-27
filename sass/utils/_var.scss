@@ -9,3 +9,15 @@
 	--sechover-color: #31d0aa;
 	--o-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+%centeredFlex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin centerFlex($type: flex) {
+	display: $type;
+	align-items: center;
+	justify-content: center;
+}

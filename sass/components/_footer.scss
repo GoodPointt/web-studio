@@ -65,8 +65,7 @@
 }
 
 .subscribe-btn {
-	display: flex;
-	align-items: center;
+	@extend %centeredFlex;
 	gap: 16px;
 
 	background-color: var(--accent-color);

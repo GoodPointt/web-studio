@@ -105,12 +105,9 @@ body {
 	justify-content: center;
 }
 .social-link {
-	display: flex;
+	@extend %centeredFlex;
 	height: 40px;
 	width: 40px;
-
-	align-items: center;
-	justify-content: center;
 
 	border-radius: 50%;
 	background-color: var(--accent-color);
@@ -125,9 +122,7 @@ body {
 /*================== CUSTOMERS ==================*/
 
 .customers-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %centeredFlex;
 
 	height: 88px;
 
