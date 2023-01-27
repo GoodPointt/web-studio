@@ -42,9 +42,9 @@
 	}
 
 	.feature-icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include centerFlex();
+
+		// @extend %centeredFlex;
 
 		height: 112px;
 		margin-bottom: 8px;
