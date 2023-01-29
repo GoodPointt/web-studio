@@ -14,6 +14,8 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./css/aos.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -25,7 +27,7 @@
 		<header class="page-header">
 			<div class="container header-nav">
 				<nav class="navigation">
-					<a href="./index.html" class="logo-link link">
+					<a href="./index.html" class="logo-link link animate__animated animate__backInLeft">
 						Web
 						<span class="logo-name">Studio</span>
 					</a>
@@ -35,7 +37,7 @@
 							<a href="./index.html" class="nav-link link current">Studio</a>
 						</li>
 						<li class="nav-item">
-							<a href="./portfolio.html" class="nav-link link">Portfolio</a>
+							<a href="./portfolio.html" class="nav-link">Portfolio</a>
 						</li>
 						<li class="nav-item">
 							<a href="" class="nav-link link">Contacts</a>
@@ -53,7 +55,7 @@
 						<use class="icon-burger" xlink:href="./images/icons.svg#burger"></use>
 					</svg>
 				</button>
-				<ul class="contacts-list">
+				<ul class="contacts-list animate__animated animate__backInRight">
 					<li class="contacts-item">
 						<a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 					</li>
@@ -66,8 +68,12 @@
 			<!--Hero-->
 			<section class="hero">
 				<div class="container">
-					<h1 class="hero-header">Effective Solutions for Your Business</h1>
-					<button data-modal-open class="hero-button" type="button">Order Service</button>
+					<h1 class="hero-header animate__animated animate__pulse animate__delay-1s animate__slower">
+						Effective Solutions for Your Business
+					</h1>
+					<button data-modal-open class="hero-button animate__animated animate__fadeIn animate__slower" type="button">
+						Order Service
+					</button>
 				</div>
 			</section>
 
@@ -78,45 +84,45 @@
 
 					<ul class="feature-list">
 						<li class="feature-item">
-							<div class="feature-icon">
+							<div class="feature-icon animate__animated animate__bounceInLeft">
 								<svg width="64" height="64" class="">
 									<use xlink:href="./images/icons.svg#antenna"></use>
 								</svg>
 							</div>
-							<h3 class="section-title">Strategy</h3>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Strategy</h3>
 							<p class="section-text">
 								Our goal is to identify the business problem to walk away with the perfect and creative solution.
 							</p>
 						</li>
 						<li class="feature-item">
-							<div class="feature-icon">
+							<div class="feature-icon animate__animated animate__bounceInLeft">
 								<svg width="64" height="64" class="">
 									<use xlink:href="./images/icons.svg#clock"></use>
 								</svg>
 							</div>
-							<h3 class="section-title">Punctuality</h3>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Punctuality</h3>
 							<p class="section-text">
 								Bring the key message to the brand's audience for the best price within the shortest possible time.
 							</p>
 						</li>
 						<li class="feature-item">
-							<div class="feature-icon">
+							<div class="feature-icon animate__animated animate__bounceInRight">
 								<svg width="64" height="64" class="">
 									<use xlink:href="./images/icons.svg#diagram"></use>
 								</svg>
 							</div>
-							<h3 class="section-title">Diligence</h3>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Diligence</h3>
 							<p class="section-text">
 								Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
 							</p>
 						</li>
 						<li class="feature-item">
-							<div class="feature-icon">
+							<div class="feature-icon animate__animated animate__bounceInRight">
 								<svg width="64" height="64" class="">
 									<use xlink:href="./images/icons.svg#astronaut"></use>
 								</svg>
 							</div>
-							<h3 class="section-title">Technologies</h3>
+							<h3 class="section-title" data-aos="fade-up" data-aos-once="true">Technologies</h3>
 							<p class="section-text">
 								Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
 							</p>
@@ -128,15 +134,15 @@
 			<!--Section 2   WORK-->
 			<section class="work section no-padding-top">
 				<div class="container">
-					<h2 class="section-header">What are we doing</h2>
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">What are we doing</h2>
 					<ul class="work-list">
-						<li class="work-item">
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
 							<img srcset="./images/img@2x.jpg 2x" src="./images/img.jpg" alt="desktop" width="360" />
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
 							<img srcset="./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="mobile" width="360" />
 						</li>
-						<li class="work-item">
+						<li class="work-item" data-aos="fade-up" data-aos-once="true">
 							<img srcset="./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="sync" width="360" />
 						</li>
 					</ul>
@@ -146,9 +152,9 @@
 			<!--Section 3    TEAM-->
 			<section class="team section">
 				<div class="container">
-					<h2 class="section-header">Our team</h2>
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">Our team</h2>
 					<ul class="team-list">
-						<li class="team-item">
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
 							<img
 								class="card-img"
 								srcset="./images/mark@2x.jpg 2x"
@@ -206,7 +212,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-item">
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
 							<img
 								srcset="./images/tom@2x.jpg 2x"
 								class="card-img"
@@ -264,7 +270,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-item">
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
 							<img
 								srcset="./images/camila@2x.jpg 2x"
 								class="card-img"
@@ -322,7 +328,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-item">
+						<li class="team-item" data-aos="fade-up" data-aos-once="true">
 							<img
 								srcset="./images/daniel@2x.jpg 2x"
 								class="card-img"
@@ -387,44 +393,44 @@
 			<!--Section 4 CUSTOMERS-->
 			<section class="customers section">
 				<div class="container">
-					<h2 class="section-header">Customers</h2>
+					<h2 class="section-header" data-aos="fade-in" data-aos-once="true">Customers</h2>
 					<ul class="customers-list">
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg width="104" height="56">
 									<use xlink:href="./images/icons.svg#client1"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg class="customer-svg" width="104" height="56">
 									<use xlink:href="./images/icons.svg#client2"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg width="104" height="56">
 									<use xlink:href="./images/icons.svg#client3"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg width="104" height="56">
 									<use xlink:href="./images/icons.svg#client4"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg width="104" height="56">
 									<use xlink:href="./images/icons.svg#client5"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="customers-item">
+						<li class="customers-item" data-aos="fade-up" data-aos-once="true">
 							<a class="customers-link" target="_blank" rel="norefferer noopener nofollow" href="">
 								<svg width="104" height="56">
 									<use xlink:href="./images/icons.svg#client6"></use>
@@ -666,5 +672,9 @@
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
