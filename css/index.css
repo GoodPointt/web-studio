@@ -891,6 +891,7 @@ body {
   text-align: center;
   color: var(--accent-color);
   background-color: var(--secondary-color);
+  cursor: pointer;
   padding: 12px 24px;
   border: 1px solid var(--secondary-txt-color);
   border-radius: 4px;
