@@ -882,6 +882,11 @@ body {
 }
 
 /*========================== FILTERS ============================*/
+.filter-input:checked + .filter-btn {
+  color: var(--bg-color);
+  background-color: var(--btn-hover-color);
+}
+
 .filter-btn {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -917,6 +922,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+}
+
+.filter-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*======================= PORTFOLIO CARD ROW ====================*/
@@ -1029,7 +1048,6 @@ body {
     -webkit-column-gap: 24px;
        -moz-column-gap: 24px;
             column-gap: 24px;
-    row-gap: 48px;
   }
   .card-item {
     -ms-flex-preferred-size: calc((100% - 24px) / 2);
@@ -1209,7 +1227,6 @@ body {
   }
   .card-item {
     max-width: 396px;
-    height: auto;
   }
   .card-item:not(:last-child) {
     margin-bottom: 48px;
@@ -1328,6 +1345,15 @@ body {
   }
   .container.footer-flex {
     width: 535px;
+  }
+  .card-item {
+    width: 356px;
+    height: 450px;
+    margin-right: 12px;
+    margin-bottom: 72px;
+  }
+  .portfolio {
+    margin-bottom: 0px;
   }
 }
 /* 1200px + */

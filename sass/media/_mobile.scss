@@ -42,7 +42,6 @@
 	}
 	.card-list {
 		column-gap: 24px;
-		row-gap: 48px;
 	}
 	.card-item {
 		flex-basis: calc((100% - 24px) / 2);
@@ -215,7 +214,7 @@
 
 	.card-item {
 		max-width: 396px;
-		height: auto;
+		// height: auto;
 
 		&:not(:last-child) {
 			margin-bottom: 48px;

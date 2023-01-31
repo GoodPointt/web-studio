@@ -73,35 +73,35 @@
 
 					<!--Filters-->
 
-					<ul class="filter-list animate__animated animate__bounceInDown">
+					<ul class="filters filter-list animate__animated animate__bounceInDown">
 						<li class="filter-item">
 							<label>
-								<input type="radio" name="filter" checked />
+								<input class="filter-input" type="radio" name="filter" value="*" checked="checked" />
 								<div class="filter-btn" type="button">All</div>
 							</label>
 						</li>
 
 						<li class="filter-item">
 							<label>
-								<input type="radio" name="filter" />
+								<input class="filter-input" type="radio" name="filter" value=".site" />
 								<div class="filter-btn" type="button">Web Site</div>
 							</label>
 						</li>
 						<li class="filter-item">
 							<label>
-								<input type="radio" name="filter" />
+								<input class="filter-input" type="radio" name="filter" value=".app" />
 								<div class="filter-btn" type="button">App</div>
 							</label>
 						</li>
 						<li class="filter-item">
 							<label>
-								<input type="radio" name="filter" />
+								<input class="filter-input" type="radio" name="filter" value=".design" />
 								<div class="filter-btn" type="button">Design</div>
 							</label>
 						</li>
 						<li class="filter-item">
 							<label>
-								<input type="radio" name="filter" />
+								<input class="filter-input" type="radio" name="filter" value=".marketing" />
 								<div class="filter-btn" type="button">Marketing</div>
 							</label>
 						</li>
@@ -109,8 +109,8 @@
 
 					<!--Cards row -->
 
-					<ul class="card-list animate__animated animate__pulse animate__slower">
-						<li class="card-item">
+					<ul class="card-list animate__animated animate__pulse animate__slower grid">
+						<li class="card-item element-item marketing">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -134,12 +134,12 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Banking App Interface Concept</h2>
-									<p class="section-text">Marketing</p>
+									<p class="section-text" class="name">Marketing</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="card-item">
+						<li class="card-item element-item marketing">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -163,11 +163,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Cashless Payment</h2>
-									<p class="section-text">Marketing</p>
+									<p class="section-text" class="name">Marketing</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item app">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -191,11 +191,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Meditaion App</h2>
-									<p class="section-text">App</p>
+									<p class="section-text" class="name">App</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item marketing">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -219,11 +219,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Taxi Service</h2>
-									<p class="section-text">Marketing</p>
+									<p class="section-text" class="name">Marketing</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item design">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -247,11 +247,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Screen Illustrations</h2>
-									<p class="section-text">Design</p>
+									<p class="section-text" class="name">Design</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item marketing">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -276,11 +276,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Online Courses</h2>
-									<p class="section-text">Marketing</p>
+									<p class="section-text" class="name">Marketing</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item design">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -305,11 +305,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Instagram Stories Concept</h2>
-									<p class="section-text">Design</p>
+									<p class="section-text" class="name">Design</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item site">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -334,11 +334,11 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Organic Food</h2>
-									<p class="section-text">Web Site</p>
+									<p class="section-text" class="name">Web Site</p>
 								</div>
 							</a>
 						</li>
-						<li class="card-item">
+						<li class="card-item element-item site">
 							<a href="" class="card-link">
 								<div class="box">
 									<div class="overlay">
@@ -363,7 +363,7 @@
 								</div>
 								<div class="under-card">
 									<h2 class="section-title">Fresh Coffee</h2>
-									<p class="section-text">Web Site</p>
+									<p class="section-text" class="name">Web Site</p>
 								</div>
 							</a>
 						</li>
@@ -523,5 +523,8 @@
 			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/jquery.js"></script>
+		<script src="./js/isotope.js"></script>
+		<script src="./js/filter-test.js"></script>
 	</body>
 </html>
