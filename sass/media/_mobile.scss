@@ -70,22 +70,20 @@
 		left: 0;
 		background-color: #fff;
 		z-index: 100;
-		transform: translateY(100%);
+		transform: translateX(100%) scale(0.1);
 
-		transition: transform var(--o-animation), opacity var(--o-animation), visibility var(--o-animation),
-			scale var(--o-animation);
+		transition: transform var(--o-animation), opacity var(--o-animation), visibility var(--o-animation);
+		transform-origin: top right;
 
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
-		scale: 0.1;
 
 		&.is-open {
-			transform: translateY(0);
+			transform: translateX(0) scale(1);
 			opacity: 1;
 			visibility: visible;
 			pointer-events: auto;
-			scale: 1;
 		}
 	}
 
