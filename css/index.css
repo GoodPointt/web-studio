@@ -509,34 +509,23 @@ body {
 
 .backdrop {
   position: fixed;
-  z-index: 3;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
   opacity: 0;
-  visibility: hidden;
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.1);
-          transform: translate(-50%, -50%) scale(0.1);
-  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
-  position: relative;
+  position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+  z-index: 30;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -551,17 +540,26 @@ body {
   border-radius: 4px;
   padding: 24px;
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal.active,
 .backdrop.active {
   opacity: 1;
-  visibility: visible;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  pointer-events: all;
 }
 
-.backdrop.is-hidden .close-modal {
-  opacity: 0;
+.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .modal .close-modal {
@@ -748,9 +746,12 @@ body {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.modal-input-policy:checked + .modal-input-policy:checked + .checkbox-field:hover {
+.modal-input-policy:checked + .checkbox-field:hover {
   background-color: var(--btn-hover-color);
   border-color: var(--btn-hover-color);
+}
+.modal-input-policy:focus + .checkbox-field {
+  outline: 2px solid var(--accent-color);
 }
 
 .form-link {
@@ -939,6 +940,14 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.filter-input:focus + .filter-btn {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--accent-color);
 }
 
 /*======================= PORTFOLIO CARD ROW ====================*/

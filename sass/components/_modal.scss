@@ -1,6 +1,6 @@
 .backdrop {
 	position: fixed;
-	z-index: 3;
+	z-index: 20;
 	top: 0;
 	left: 0;
 
@@ -8,33 +8,17 @@
 	height: 100%;
 
 	background-color: rgba(46, 47, 66, 0.4);
-	// opacity: 1;
-
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-property: opacity;
 
 	opacity: 0;
-	visibility: hidden;
-	// pointer-events: none;
-}
-
-// .backdrop.is-hidden {
-// 	opacity: 0;
-// 	pointer-events: none;
-// }
-
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.1);
-	opacity: 0;
+	pointer-events: none;
 }
 
 .modal {
-	position: relative;
+	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-	// opacity: 1;
+	transform: translate(-50%, -50%) scale(0.1);
+	z-index: 30;
 
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,19 +31,20 @@
 	padding: 24px;
 
 	opacity: 0;
-	visibility: hidden;
+	pointer-events: none;
 }
 
 .modal.active,
 .backdrop.active {
 	opacity: 1;
-	visibility: visible;
-
-	// pointer-events: all;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: opacity, transform;
+	pointer-events: all;
 }
 
-.backdrop.is-hidden .close-modal {
-	opacity: 0;
+.modal.active {
+	transform: translate(-50%, -50%) scale(1);
 }
 
 .modal .close-modal {
@@ -214,11 +199,13 @@
 		fill: var(--secondary-color);
 		background-color: var(--accent-color);
 		border-color: var(--accent-color);
-
-		.modal-input-policy:checked + &:hover {
-			background-color: var(--btn-hover-color);
-			border-color: var(--btn-hover-color);
-		}
+	}
+	.modal-input-policy:checked + &:hover {
+		background-color: var(--btn-hover-color);
+		border-color: var(--btn-hover-color);
+	}
+	.modal-input-policy:focus + & {
+		outline: 2px solid var(--accent-color);
 	}
 }
 

@@ -529,83 +529,83 @@
 		</footer>
 
 		<!-- Backdrop + modal -->
-		<div class="backdrop js-backdrop-modal">
-			<div class="modal" data-modal="1">
-				<button data-modal-close class="close-modal js-modal-close">
-					<svg width="8" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<use xlink:href="./images/icons.svg#close"></use>
+		<div class="modal" data-modal="1">
+			<button data-modal-close class="close-modal js-modal-close">
+				<svg width="8" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<use xlink:href="./images/icons.svg#close"></use>
+				</svg>
+			</button>
+			<p class="modal-header">Leave your contacts and we will call you back</p>
+			<form class="modal-form">
+				<label class="modal-form-field">
+					<span class="modal-label">Name</span>
+					<input
+						type="text"
+						class="modal-input"
+						name="user-name"
+						required
+						minlength="2"
+						pattern="^[A-Za-zА-Яа-яіІїЇ]+$"
+						title="Type your name here"
+					/>
+					<svg width="16" height="16" class="modal-icon">
+						<use xlink:href="./images/icons.svg#person"></use>
 					</svg>
-				</button>
-				<p class="modal-header">Leave your contacts and we will call you back</p>
-				<form class="modal-form">
-					<label class="modal-form-field">
-						<span class="modal-label">Name</span>
-						<input
-							type="text"
-							class="modal-input"
-							name="user-name"
-							required
-							minlength="2"
-							pattern="^[A-Za-zА-Яа-яіІїЇ]+$"
-							title="Type your name here"
-						/>
-						<svg width="16" height="16" class="modal-icon">
-							<use xlink:href="./images/icons.svg#person"></use>
-						</svg>
-					</label>
+				</label>
 
-					<label class="modal-form-field">
-						<span class="modal-label">Phone</span>
-						<input
-							type="tel"
-							class="modal-input"
-							name="telephone"
-							required
-							pattern="[0-9]{10}"
-							title="Ten digits
+				<label class="modal-form-field">
+					<span class="modal-label">Phone</span>
+					<input
+						type="tel"
+						class="modal-input"
+						name="telephone"
+						required
+						pattern="[0-9]{10}"
+						title="Ten digits
                 phone number"
-							minlength="10"
-						/>
-						<svg width="16" height="16" class="modal-icon">
-							<use xlink:href="./images/icons.svg#phone"></use>
+						minlength="10"
+					/>
+					<svg width="16" height="16" class="modal-icon">
+						<use xlink:href="./images/icons.svg#phone"></use>
+					</svg>
+				</label>
+
+				<label class="modal-form-field">
+					<span class="modal-label">Email</span>
+					<input
+						type="email"
+						class="modal-input"
+						name="email"
+						required
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+						title="email@mail.com"
+					/>
+					<svg width="16" height="16" class="modal-icon">
+						<use xlink:href="./images/icons.svg#email"></use>
+					</svg>
+				</label>
+
+				<label for="comment" class="modal-label">Comment</label>
+				<textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+
+				<label for="policy" class="modal-label-policy">
+					<input type="checkbox" class="modal-input-policy" name="policy" value="policy-agree" id="policy" />
+					<span class="checkbox-field">
+						<svg width="16" height="16" class="checkbox-icon">
+							<use xlink:href="./images/icons.svg#checkbox"></use>
 						</svg>
-					</label>
+					</span>
+					<span>
+						I accept the terms and conditions of the
+						<a class="form-link" href="">Privacy Policy</a>
+					</span>
+				</label>
 
-					<label class="modal-form-field">
-						<span class="modal-label">Email</span>
-						<input
-							type="email"
-							class="modal-input"
-							name="email"
-							required
-							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-							title="email@mail.com"
-						/>
-						<svg width="16" height="16" class="modal-icon">
-							<use xlink:href="./images/icons.svg#email"></use>
-						</svg>
-					</label>
-
-					<label for="comment" class="modal-label">Comment</label>
-					<textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"></textarea>
-
-					<label for="policy" class="modal-label-policy">
-						<input type="checkbox" class="modal-input-policy" name="policy" value="policy-agree" id="policy" />
-						<span class="checkbox-field">
-							<svg width="16" height="16" class="checkbox-icon">
-								<use xlink:href="./images/icons.svg#checkbox"></use>
-							</svg>
-						</span>
-						<span>
-							I accept the terms and conditions of the
-							<a class="form-link" href="">Privacy Policy</a>
-						</span>
-					</label>
-
-					<button type="submit" class="modal-btn">Send</button>
-				</form>
-			</div>
+				<button type="submit" class="modal-btn">Send</button>
+			</form>
 		</div>
+
+		<div class="backdrop js-backdrop-modal"></div>
 		<!-- Mobile menu -->
 		<div class="mobile-menu js-menu-container" id="mobile-menu">
 			<div class="container mobile-menu-container">
