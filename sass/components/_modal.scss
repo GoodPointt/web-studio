@@ -8,17 +8,21 @@
 	height: 100%;
 
 	background-color: rgba(46, 47, 66, 0.4);
-	opacity: 1;
+	// opacity: 1;
 
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-property: opacity;
+
+	opacity: 0;
+	visibility: hidden;
+	// pointer-events: none;
 }
 
-.backdrop.is-hidden {
-	opacity: 0;
-	pointer-events: none;
-}
+// .backdrop.is-hidden {
+// 	opacity: 0;
+// 	pointer-events: none;
+// }
 
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.1);
@@ -30,7 +34,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1);
-	opacity: 1;
+	// opacity: 1;
 
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,6 +45,17 @@
 	border-radius: 4px;
 
 	padding: 24px;
+
+	opacity: 0;
+	visibility: hidden;
+}
+
+.modal.active,
+.backdrop.active {
+	opacity: 1;
+	visibility: visible;
+
+	// pointer-events: all;
 }
 
 .backdrop.is-hidden .close-modal {

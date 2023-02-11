@@ -71,7 +71,11 @@
 					<h1 class="hero-header animate__animated animate__pulse animate__delay-1s animate__slower">
 						Effective Solutions for Your Business
 					</h1>
-					<button data-modal-open class="hero-button animate__animated animate__fadeIn animate__slower" type="button">
+					<button
+						data-modal="1"
+						class="hero-button animate__animated animate__fadeIn animate__slower js-open-modal"
+						type="button"
+					>
 						Order Service
 					</button>
 				</div>
@@ -525,9 +529,9 @@
 		</footer>
 
 		<!-- Backdrop + modal -->
-		<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button data-modal-close class="close-modal">
+		<div class="backdrop js-backdrop-modal">
+			<div class="modal" data-modal="1">
+				<button data-modal-close class="close-modal js-modal-close">
 					<svg width="8" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<use xlink:href="./images/icons.svg#close"></use>
 					</svg>
@@ -665,6 +669,8 @@
 		<!-- JS -->
 		<script src="./js/header-height.js"></script>
 		<script src="./js/modal.js"></script>
+		<script src="./js/modal-new.js"></script>
+
 		<script src="./js/mobile.js"></script>
 		<script
 			defer=""
