@@ -458,6 +458,15 @@ body {
   color: var(--accent-color);
 }
 
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
 .hero {
   padding: 112px 0;
   height: 428px;
@@ -756,8 +765,7 @@ body {
 
 .form-link {
   color: var(--accent-color);
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   -webkit-transition-property: color var(--o-animation);
   transition-property: color var(--o-animation);
 }

@@ -1,3 +1,12 @@
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--accent-color);
+}
+
 .hero {
 	padding: 112px 0;
 	height: 428px;
